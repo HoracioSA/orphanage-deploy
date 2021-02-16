@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/orphanage-deploy/precache-manifest.0510e8a93c71bfc753845f773ca7f43b.js"
+  "/orphanage-deploy/precache-manifest.5c3d08da939cd2f6fd001cc7cf2ac1e4.js"
 );
 
 self.addEventListener('message', (event) => {
