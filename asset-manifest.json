@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/orphanage-app/static/css/main.fe502752.chunk.css",
+    "main.js": "/orphanage-app/static/js/main.50337adb.chunk.js",
+    "main.js.map": "/orphanage-app/static/js/main.50337adb.chunk.js.map",
+    "runtime-main.js": "/orphanage-app/static/js/runtime-main.aaa31e54.js",
+    "runtime-main.js.map": "/orphanage-app/static/js/runtime-main.aaa31e54.js.map",
+    "static/css/2.bcddf60d.chunk.css": "/orphanage-app/static/css/2.bcddf60d.chunk.css",
+    "static/js/2.ee6896fe.chunk.js": "/orphanage-app/static/js/2.ee6896fe.chunk.js",
+    "static/js/2.ee6896fe.chunk.js.map": "/orphanage-app/static/js/2.ee6896fe.chunk.js.map",
+    "index.html": "/orphanage-app/index.html",
+    "precache-manifest.2e224c06bcd96c67df7019cb0cb38c4c.js": "/orphanage-app/precache-manifest.2e224c06bcd96c67df7019cb0cb38c4c.js",
+    "service-worker.js": "/orphanage-app/service-worker.js",
+    "static/css/2.bcddf60d.chunk.css.map": "/orphanage-app/static/css/2.bcddf60d.chunk.css.map",
+    "static/css/main.fe502752.chunk.css.map": "/orphanage-app/static/css/main.fe502752.chunk.css.map",
+    "static/js/2.ee6896fe.chunk.js.LICENSE.txt": "/orphanage-app/static/js/2.ee6896fe.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/orphanage-app/static/media/Ilustra02.91c8d1af.svg",
+    "static/media/Logo.svg": "/orphanage-app/static/media/Logo.1653c647.svg",
+    "static/media/map-marker.svg": "/orphanage-app/static/media/map-marker.b9410a98.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aaa31e54.js",
+    "static/css/2.bcddf60d.chunk.css",
+    "static/js/2.ee6896fe.chunk.js",
+    "static/css/main.fe502752.chunk.css",
+    "static/js/main.50337adb.chunk.js"
+  ]
+}
