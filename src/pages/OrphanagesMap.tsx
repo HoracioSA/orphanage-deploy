@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom'
 import {Map, TileLayer, Marker, Popup} from 'react-leaflet'
 import {FiPlus, FiArrowRight} from 'react-icons/fi'
-import MapmarkerImg from '../images/map-marker.svg'
+import MapmarkerImg from '../../public/images/map-marker.svg'
 import '../styles/pages/orphanages-map.css'
 import mapIcon from '../utils/mapIcon';
 import api from '../services/api';
@@ -25,7 +25,7 @@ interface Orphanage {
         <div id="page-map">
             <aside>
                 <header>
-                    <img src={MapmarkerImg} alt="Map marker"/>
+                    <img src={process.env.PUBLIC_URL + MapmarkerImg} alt="Map marker"/>
                     <h2>Choose a orphanage in map</h2>
                     <p>Many childrens are waighting for your visit</p>
                 </header>
