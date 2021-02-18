@@ -25,7 +25,7 @@ interface Orphanage {
         <div id="page-map">
             <aside>
                 <header>
-                    <img src={process.env.PUBLIC_URL + MapmarkerImg} alt="Map marker"/>
+                    <img src={MapmarkerImg} alt="Map marker"/>
                     <h2>Choose a orphanage in map</h2>
                     <p>Many childrens are waighting for your visit</p>
                 </header>

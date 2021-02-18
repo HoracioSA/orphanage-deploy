@@ -30,25 +30,29 @@ mode: 'development',
                 use: [MiniCssExtractPlugin.loader, 'css-loader',]
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,
+                test: /\.(png|jpg|gif)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options:{
-                            name: "[name].[hash:5].[ext]",
-                            outputPath:"src/images",
+                            name: "[name].[ext]",
+                            outputPath:"public",
                             publicPath:"images"
                         }
                 }
                 ]
             },
             {
-                test: /\.svg$/i,
-                loader: "svg-loader",
-                options: {
-                    modules: true,
-                }
-            },
+                test: /\.svg$/,
+                use: [
+                  {
+                    loader: 'svg-url-loader',
+                    options: {
+                      limit: 10000,
+                    },
+                  },
+                ],
+              },
             {
                 test: /\.html$/i,
                 use: [{
@@ -62,6 +66,7 @@ mode: 'development',
     output:{
         filename: 'bundle.js',
         path: path.resolve(__dirname,'build'),
+        publicPath:"/"
     },
     plugins: [new HtmlWebpackPlugin({
         template: "public/index.html",

@@ -8,7 +8,7 @@ export default function Landing(){
     return (
         <div id="home-page">
       <div className="content-wrapper">
-          <img src={process.env.PUBLIC_URL + logoimg} alt="happy"/>
+          <img src={logoimg} alt="happy"/>
       <main>
         <h1>Give happyness to the world</h1>
         <p>Visit a orfanate and changa someone's day</p>

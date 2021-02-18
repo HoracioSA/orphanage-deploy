@@ -7,7 +7,7 @@ export default function Sidebar(){
     const {goBack} = useHistory()
     return (
         <aside className="app-sidebar">
-        <img src={process.env.PUBLIC_URL+mapMarkerImg} alt="Happy" />
+        <img src={mapMarkerImg} alt="Happy" />
 
         <footer>
           <button type="button" onClick={goBack}>
