@@ -238,7 +238,7 @@ form.create-orphanage-form button.confirm-button:hover {
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
-    /* background: url(`$../../images/Ilustra02.svg`) no-repeat 80% center; */
+    background: url(/b79b73a938648a0a8a2fa1876d1ccb12.svg) no-repeat 80% center;
 }
 .content-wrapper .location{
     position: absolute;
@@ -890,12 +890,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	border-radius: 5px;
 	}
 .leaflet-control-layers-toggle {
-	background-image: url(images/layers.416d9.png);
+	background-image: url(images/layers.png);
 	width: 36px;
 	height: 36px;
 	}
 .leaflet-retina .leaflet-control-layers-toggle {
-	background-image: url(images/layers-2x.8f2c4.png);
+	background-image: url(images/layers-2x.png);
 	background-size: 26px 26px;
 	}
 .leaflet-touch .leaflet-control-layers-toggle {
@@ -936,7 +936,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* Default icon URLs */
 .leaflet-default-icon-path {
-	background-image: url(images/marker-icon.2b3e1.png);
+	background-image: url(images/marker-icon.png);
 	}
 
 
