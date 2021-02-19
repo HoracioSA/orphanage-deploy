@@ -327,12 +327,7 @@ function Orphanage() {
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_11__.FiInfo, { size: 32, color: "#39CC83" }),
                             "On weekends we are ",
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null),
-                            "Oppen"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "open-on-weekends dont-open" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_11__.FiInfo, { size: 32, color: "#FF669D" }),
-                            "On weekends we are ",
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null),
-                            "Closed")),
+                            "Oppen")),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button", className: "contact-button" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_12__.FaWhatsapp, { size: 20, color: "#FFF" }),
                         "Contact us on whatsapp"))))));
