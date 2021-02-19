@@ -209,6 +209,9 @@ form.create-orphanage-form button.confirm-button:hover {
 #home-page{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(329.54deg, #7ec9de 0%, #39cbcb 100%);
     display: flex;
     justify-content: center;
@@ -216,24 +219,28 @@ form.create-orphanage-form button.confirm-button:hover {
 }
 
 #home-page .content-wrapper main{
-    max-width: 350px;
+    max-width: 21.875rem;
 }
 #home-page .content-wrapper main h1{
-    font-size: 76px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    font-size: 4.75rem;
     font-weight: 900;
-    line-height: 70px;
+    line-height: 4.375rem;
 }
 #home-page .content-wrapper main p{
-   margin-top: 40px;
-   font-size: 24px;
-   line-height: 34px;
+    align-items: center;
+   margin-top: 2.5rem;
+   font-size: 1.5rem;
+   line-height: 2.125rem;
 }
 #home-page .content-wrapper{
     position: relative;
     width: 100%;
-    max-width: 1050px;
+    max-width: 65.625rem;
     height: 100%;
-    max-height: 680px;
+    max-height: 42.5rem;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -244,8 +251,8 @@ form.create-orphanage-form button.confirm-button:hover {
     position: absolute;
     right: 0;
     top: 0;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 1.5rem;
+    line-height: 2.125rem;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -257,10 +264,10 @@ form.create-orphanage-form button.confirm-button:hover {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     background: #ffd666;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     display: flex;
     align-items: center;
     justify-content: center;

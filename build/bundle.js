@@ -252,16 +252,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* binding */ Orphanage; }
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
-/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-icons/fi */ "./node_modules/react-icons/fi/index.esm.js");
-/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/Map.js");
-/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/TileLayer.js");
-/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/Marker.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _components_Sidebar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Sidebar */ "./src/components/Sidebar.tsx");
-/* harmony import */ var _utils_mapIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/mapIcon */ "./src/utils/mapIcon.ts");
-/* harmony import */ var _services_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/api */ "./src/services/api.ts");
-/* harmony import */ var _styles_pages_orphanage_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/pages/orphanage.css */ "./src/styles/pages/orphanage.css");
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
+/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-icons/fi */ "./node_modules/react-icons/fi/index.esm.js");
+/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/Map.js");
+/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/TileLayer.js");
+/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/Marker.js");
+/* harmony import */ var _public_images_foto1_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../public/images/foto1.jpg */ "./public/images/foto1.jpg");
+/* harmony import */ var _public_images_foto1_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_images_foto1_jpg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_images_foto2_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../public/images/foto2.jpg */ "./public/images/foto2.jpg");
+/* harmony import */ var _public_images_foto2_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_public_images_foto2_jpg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _public_images_foto3_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../public/images/foto3.jpg */ "./public/images/foto3.jpg");
+/* harmony import */ var _public_images_foto3_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_public_images_foto3_jpg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _public_images_foto5_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../public/images/foto5.jpg */ "./public/images/foto5.jpg");
+/* harmony import */ var _public_images_foto5_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_images_foto5_jpg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Sidebar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Sidebar */ "./src/components/Sidebar.tsx");
+/* harmony import */ var _utils_mapIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/mapIcon */ "./src/utils/mapIcon.ts");
+/* harmony import */ var _styles_pages_orphanage_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/pages/orphanage.css */ "./src/styles/pages/orphanage.css");
+
+
 
 
 
@@ -272,57 +280,61 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Orphanage() {
-    const params = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useParams)();
-    const [orphanage, setOrphanage] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)();
-    const [activeImageIndex, setActiveImageIndex] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
-    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-        _services_api__WEBPACK_IMPORTED_MODULE_3__.default.get(`orphanages/${params.id}`).then(response => {
-            setOrphanage(response.data);
-        });
-    }, [params.id]);
-    if (!orphanage) {
-        return react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Loading...");
-    }
+    // const params = useParams<Orphanage_Route_Params>();
+    // const [orphanage, setOrphanage]=useState<Orphanage>();
+    // const [activeImageIndex, setActiveImageIndex]=useState(0)
+    // useEffect(()=>{
+    //   api.get(`orphanages/${params.id}`).then(response=>{
+    //     setOrphanage(response.data)
+    //   })
+    // },[params.id]);
+    // // if(!orphanage){
+    // //   return <p>Loading...</p>
+    // // }
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { id: "page-orphanage" },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Sidebar__WEBPACK_IMPORTED_MODULE_1__.default, null),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Sidebar__WEBPACK_IMPORTED_MODULE_5__.default, null),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null,
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "orphanage-details" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: orphanage.images[activeImageIndex].url, alt: orphanage.name }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "images" }, orphanage.images.map((image, index) => {
-                    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: image.id, className: activeImageIndex === index ? 'active' : '', type: "button", onClick: () => {
-                            setActiveImageIndex(index);
-                        } },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: image.url, alt: orphanage.name })));
-                })),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: (_public_images_foto1_jpg__WEBPACK_IMPORTED_MODULE_1___default()), alt: "orpanage" }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "images" },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: 'active', type: "button" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: (_public_images_foto2_jpg__WEBPACK_IMPORTED_MODULE_2___default()), alt: "orpanage" })),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: (_public_images_foto3_jpg__WEBPACK_IMPORTED_MODULE_3___default()), alt: "orpanage" })),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: (_public_images_foto3_jpg__WEBPACK_IMPORTED_MODULE_3___default()), alt: "orpanage" })),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: (_public_images_foto5_jpg__WEBPACK_IMPORTED_MODULE_4___default()), alt: "orpanage" }))),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "orphanage-details-content" },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, orphanage.name),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, orphanage.about),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Dnipro1"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Came and your hepl is necessary for homeless peaples"),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "map-container" },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_6__.default, { center: [orphanage.latitude, orphanage.longitude], zoom: 12, style: { width: '100%', height: 280 }, dragging: false, touchZoom: false, zoomControl: false, scrollWheelZoom: false, doubleClickZoom: false },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_7__.default, { url: `https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${"pk.eyJ1IjoiaG9yYWNpb3NhcGF0byIsImEiOiJja2c5dGRrbWQwMGtsMnJsbDV0YnEybHRuIn0.cbG7CCVMsgih2QlZ2Xhm0w"}` }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_8__.default, { interactive: false, icon: _utils_mapIcon__WEBPACK_IMPORTED_MODULE_2__.default, position: [orphanage.latitude, orphanage.longitude] })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_8__.default, { center: [48.456710, 35.075938], zoom: 12, style: { width: '100%', height: 280 }, dragging: false, touchZoom: false, zoomControl: false, scrollWheelZoom: false, doubleClickZoom: false },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_9__.default, { url: `https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${"pk.eyJ1IjoiaG9yYWNpb3NhcGF0byIsImEiOiJja2c5dGRrbWQwMGtsMnJsbDV0YnEybHRuIn0.cbG7CCVMsgih2QlZ2Xhm0w"}` }),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_10__.default, { interactive: false, icon: _utils_mapIcon__WEBPACK_IMPORTED_MODULE_6__.default, position: [48.456710, 35.075938] })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null,
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { target: "_blank", rel: "noopener noreferrer", href: `https://www.google.com/maps/dir/?api=1&destination=${orphanage.latitude},${orphanage.longitude}` }, "Check out on Google Maps"))),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { target: "_blank", rel: "noopener noreferrer", href: `https://www.google.com/maps/dir/?api=1&destination=${48.456710},${35.075938}` }, "Check out on Google Maps"))),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Instructions for visiters"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, orphanage.instructions),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Just contact us ba calling us or via email: someemail@gmail.com"),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "open-details" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "hour" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiClock, { size: 32, color: "#15B6D6" }),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_11__.FiClock, { size: 32, color: "#15B6D6" }),
                             "From Monday to Friday ",
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null),
-                            orphanage.opening_hours),
-                        orphanage.open_on_weekends ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "open-on-weekends" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiInfo, { size: 32, color: "#39CC83" }),
+                            "from 11:00 to 12:30"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "open-on-weekends" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_11__.FiInfo, { size: 32, color: "#39CC83" }),
                             "On weekends we are ",
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null),
-                            "Oppen")) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "open-on-weekends dont-open" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiInfo, { size: 32, color: "#FF669D" }),
+                            "Oppen"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "open-on-weekends dont-open" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_11__.FiInfo, { size: 32, color: "#FF669D" }),
                             "On weekends we are ",
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null),
-                            "Closed"))),
+                            "Closed")),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button", className: "contact-button" },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_10__.FaWhatsapp, { size: 20, color: "#FFF" }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_12__.FaWhatsapp, { size: 20, color: "#FFF" }),
                         "Contact us on whatsapp"))))));
 }
 
@@ -338,17 +350,16 @@ function Orphanage() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/Map.js");
-/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/TileLayer.js");
-/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/Marker.js");
-/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/Popup.js");
-/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-icons/fi */ "./node_modules/react-icons/fi/index.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/Map.js");
+/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/TileLayer.js");
+/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/Marker.js");
+/* harmony import */ var react_leaflet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-leaflet */ "./node_modules/react-leaflet/es/Popup.js");
+/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-icons/fi */ "./node_modules/react-icons/fi/index.esm.js");
 /* harmony import */ var _public_images_map_marker_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../public/images/map-marker.svg */ "./public/images/map-marker.svg");
 /* harmony import */ var _public_images_map_marker_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_images_map_marker_svg__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_pages_orphanages_map_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/pages/orphanages-map.css */ "./src/styles/pages/orphanages-map.css");
 /* harmony import */ var _utils_mapIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/mapIcon */ "./src/utils/mapIcon.ts");
-/* harmony import */ var _services_api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/api */ "./src/services/api.ts");
 
 
 
@@ -356,15 +367,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+// interface Orphanage {
+//     id: number;
+//     latitude: number;
+//     longitude:number;
+//     name:string
+// }
 function OrphanagesMap() {
-    const [orphanages, setOrphanages] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]);
-    console.log(orphanages);
-    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-        _services_api__WEBPACK_IMPORTED_MODULE_4__.default.get('orphanages').then(response => {
-            setOrphanages(response.data);
-        });
-    }, []);
+    //  const [orphanages, setOrphanages] =useState<Orphanage[]>([]);
+    //  console.log(orphanages)
+    // useEffect(()=>{
+    //     api.get('orphanages').then(response =>{
+    //        setOrphanages(response.data)
+    //     })
+    // },[])
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { id: "page-map" },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("aside", null,
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", null,
@@ -374,17 +390,36 @@ function OrphanagesMap() {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null,
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("strong", null, "Dniporo"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Kirova3"))),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_5__.default, { center: [48.4532987, 34.9017266], zoom: 13, style: { width: '100%', height: '100%' } },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_6__.default, { url: `https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${"pk.eyJ1IjoiaG9yYWNpb3NhcGF0byIsImEiOiJja2c5dGRrbWQwMGtsMnJsbDV0YnEybHRuIn0.cbG7CCVMsgih2QlZ2Xhm0w"}` }),
-            orphanages.map(orphanage => {
-                return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_7__.default, { icon: _utils_mapIcon__WEBPACK_IMPORTED_MODULE_3__.default, position: [orphanage.latitude, orphanage.longitude], key: orphanage.id },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_8__.default, { closeButton: false, minWidth: 240, maxWidth: 240, className: "map-popup" },
-                        orphanage.name,
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, { to: `/orphanages/${orphanage.id}` },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_10__.FiArrowRight, { size: 20, color: "#FFF" })))));
-            })),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, { to: "/orphanages/create", className: "create-orphanages" },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_10__.FiPlus, { size: 32, color: "#fff" }))));
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_4__.default, { center: [48.468803, 35.024569], zoom: 12, style: { width: '100%', height: '100%' } },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_5__.default, { url: `https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${"pk.eyJ1IjoiaG9yYWNpb3NhcGF0byIsImEiOiJja2c5dGRrbWQwMGtsMnJsbDV0YnEybHRuIn0.cbG7CCVMsgih2QlZ2Xhm0w"}` }),
+            "return (",
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_6__.default, { icon: _utils_mapIcon__WEBPACK_IMPORTED_MODULE_3__.default, position: [48.456710, 35.075938] },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_7__.default, { closeButton: false, minWidth: 240, maxWidth: 240, className: "map-popup" },
+                    "Dnipro 1",
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link, { to: "/orphanages" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiArrowRight, { size: 20, color: "#FFF" })))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_6__.default, { icon: _utils_mapIcon__WEBPACK_IMPORTED_MODULE_3__.default, position: [48.479136, 34.940375] },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_7__.default, { closeButton: false, minWidth: 240, maxWidth: 240, className: "map-popup" },
+                    "Dnipro 2",
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link, { to: "/orphanages" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiArrowRight, { size: 20, color: "#FFF" })))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_6__.default, { icon: _utils_mapIcon__WEBPACK_IMPORTED_MODULE_3__.default, position: [48.538897, 34.965745] },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_7__.default, { closeButton: false, minWidth: 240, maxWidth: 240, className: "map-popup" },
+                    "Dnipro 3",
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link, { to: "/orphanages" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiArrowRight, { size: 20, color: "#FFF" })))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_6__.default, { icon: _utils_mapIcon__WEBPACK_IMPORTED_MODULE_3__.default, position: [48.495950, 35.129242] },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_7__.default, { closeButton: false, minWidth: 240, maxWidth: 240, className: "map-popup" },
+                    "Dnipro 4",
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link, { to: "orphanages" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiArrowRight, { size: 20, color: "#FFF" })))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_6__.default, { icon: _utils_mapIcon__WEBPACK_IMPORTED_MODULE_3__.default, position: [48.544496, 35.008028] },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_leaflet__WEBPACK_IMPORTED_MODULE_7__.default, { closeButton: false, minWidth: 240, maxWidth: 240, className: "map-popup" },
+                    "Dnipro 5",
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link, { to: "/orphanages" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiArrowRight, { size: 20, color: "#FFF" }))))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link, { to: "/orphanages/create", className: "create-orphanages" },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_9__.FiPlus, { size: 32, color: "#fff" }))));
 }
 /* harmony default export */ __webpack_exports__["default"] = (OrphanagesMap);
 
@@ -421,7 +456,7 @@ function Routes() {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, { path: "/", exact: true, component: _pages_Landing__WEBPACK_IMPORTED_MODULE_2__.default }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, { path: "/app", component: _pages_OrphanagesMap__WEBPACK_IMPORTED_MODULE_4__.default }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, { path: "/orphanages/create", component: _pages_CreateOrphanage__WEBPACK_IMPORTED_MODULE_1__.default }),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, { path: "/orphanages/:id", component: _pages_Orphanage__WEBPACK_IMPORTED_MODULE_3__.default }))));
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, { path: "/orphanages", component: _pages_Orphanage__WEBPACK_IMPORTED_MODULE_3__.default }))));
 }
 
 
@@ -57867,6 +57902,46 @@ module.exports = "data:image/svg+xml,%3csvg width='240' height='74' viewBox='0 0
 
 module.exports = "data:image/svg+xml,%3csvg width='64' height='72' viewBox='0 0 64 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3cpath d='M63.8251 18.271V43.694C63.8251 53.7844 55.4047 61.9651 45.0187 61.9651H43.1165L33.4026 71.3963C33.0222 71.7659 32.4959 72 31.9126 72C31.3736 72 30.8854 71.809 30.5113 71.4887L30.3464 71.3285L30.3401 71.3224L20.7086 61.9651H18.8001C8.4204 61.9651 0 53.7844 0 43.694V18.271C0 8.1807 8.4204 0 18.8064 0H45.0187C55.4047 0 63.8251 8.1807 63.8251 18.271Z' fill='%2315C3D6'/%3e %3cpath d='M14.2306 35.219C12.3791 35.219 11.3238 37.2687 12.3981 38.7487C16.575 44.5139 23.4818 48.2728 31.2859 48.2728C39.09 48.2728 45.9904 44.5077 50.1674 38.7487C51.2416 37.2687 50.1863 35.219 48.3348 35.219H14.2306Z' fill='white'/%3e %3cpath d='M25.0742 26.4937H13.902V21.0196C13.902 17.9976 16.4044 15.5454 19.4881 15.5454C22.5719 15.5454 25.0742 17.9976 25.0742 21.0196V26.4937Z' fill='white'/%3e %3cpath d='M48.6693 26.4937H37.4971V21.0196C37.4971 17.9976 39.9994 15.5454 43.0832 15.5454C46.1669 15.5454 48.6693 17.9976 48.6693 21.0196V26.4937Z' fill='white'/%3e %3c/svg%3e"
 
+/***/ }),
+
+/***/ "./public/images/foto1.jpg":
+/*!*********************************!*\
+  !*** ./public/images/foto1.jpg ***!
+  \*********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "6e295754ac829e9077168edb3532ca35.jpg";
+
+/***/ }),
+
+/***/ "./public/images/foto2.jpg":
+/*!*********************************!*\
+  !*** ./public/images/foto2.jpg ***!
+  \*********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "eb6bf084433f6c293002b6b104f76277.jpg";
+
+/***/ }),
+
+/***/ "./public/images/foto3.jpg":
+/*!*********************************!*\
+  !*** ./public/images/foto3.jpg ***!
+  \*********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "5351a92bb6ad5a645497b4f7e767e279.jpg";
+
+/***/ }),
+
+/***/ "./public/images/foto5.jpg":
+/*!*********************************!*\
+  !*** ./public/images/foto5.jpg ***!
+  \*********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "2b9204f0a490ac759612bc0f8900ccd2.jpg";
+
 /***/ })
 
 /******/ 	});
@@ -57945,6 +58020,11 @@ module.exports = "data:image/svg+xml,%3csvg width='64' height='72' viewBox='0 0 
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	!function() {
+/******/ 		__webpack_require__.p = "/";
 /******/ 	}();
 /******/ 	
 /************************************************************************/

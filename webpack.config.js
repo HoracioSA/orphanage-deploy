@@ -21,7 +21,6 @@ mode: 'development',
                 exclude: /node_modules/,
               },
               {
-    
                 test: /\.js$/,
                 use: ["source-map-loader"],
               },
@@ -30,7 +29,7 @@ mode: 'development',
                 use: [MiniCssExtractPlugin.loader, 'css-loader',]
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|gif|)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -41,6 +40,17 @@ mode: 'development',
                         }
                 }
                 ]
+            },
+            {
+              test: /\.jpg$/,
+              use: [
+                {
+                  loader: 'url-loader',
+                  options: {
+                    limit: 10000,
+                  },
+                },
+              ],
             },
             {
                 test: /\.svg$/,
