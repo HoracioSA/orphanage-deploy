@@ -316,7 +316,7 @@ function Orphanage() {
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { target: "_blank", rel: "noopener noreferrer", href: `https://www.google.com/maps/dir/?api=1&destination=${48.456710},${35.075938}` }, "Check out on Google Maps"))),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Instructions for visiters"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Just contact us ba calling us or via email: someemail@gmail.com"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Just contact us ba calling us or via email: hraciosapato2015hcs@gmail.com"),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "open-details" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "hour" },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_11__.FiClock, { size: 32, color: "#15B6D6" }),
