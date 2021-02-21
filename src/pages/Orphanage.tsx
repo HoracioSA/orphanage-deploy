@@ -105,10 +105,9 @@ export default function Orphanage() {
               </footer>
             </div>
 
-            <hr />
-
+            <hr/>
             <h2>Instructions for visiters</h2>
-            <p>Just contact us ba calling us or via email: someemail@gmail.com</p>
+            <p>Just contact us ba calling us or via email: hraciosapato2015hcs@gmail.com</p>
 
             <div className="open-details">
               <div className="hour">
@@ -121,11 +120,6 @@ export default function Orphanage() {
                 On weekends we are <br />
                 Oppen
               </div>
-              <div className="open-on-weekends dont-open">
-              <FiInfo size={32} color="#FF669D" />
-              On weekends we are <br />
-              Closed
-            </div>
             </div>
 
             <button type="button" className="contact-button">
